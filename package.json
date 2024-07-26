@@ -1,10 +1,19 @@
 {
+  "name": "ecolactrazabilidad",
+  "version": "1.0.0",
   "dependencies": {
     "core-js": "^3.35.0",
     "react-google-maps": "^9.4.5",
-    "recharts": "^2.12.7"
+    "recharts": "^2.12.7",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "react-scripts": "4.0.3"
   },
   "devDependencies": {
     "@types/google.maps": "^3.54.10"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "react-scripts build"
   }
 }
