@@ -7,10 +7,10 @@ const app = express();
 // Conectar a MongoDB Atlas
 connectDB();
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'auth-front/build')));
 
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'auth-front/build', 'index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
