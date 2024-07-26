@@ -1,6 +1,11 @@
 const express = require('express');
 const path = require('path');
+const connectDB = require('./db');
+
 const app = express();
+
+// Conectar a MongoDB Atlas
+connectDB();
 
 app.use(express.static(path.join(__dirname, 'build')));
 
